@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact form</title>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+        <section class="container">
+            
+            <section class="title">
+                <div id="title" class="hidden">Login Form</div>
+                <div id="title" class="signup">Signup Form</div>
+            </section> 
+            <section class="center">
+            <section class="choose-form">
+                <input type="radio" name="slide" id="login" />
+                <label for="login" class="slide login">    Login</label>
+                <input type="radio" name="slide" id="signup" />
+                <label for="signup" class="slide signup"  checked>Signup</label>
+                <div class="slider-tab"></div>
+            </section>
+            </section>
+      
+            <section >
+       
+                <form action="" method="post">
+                <input type="text" id="name " name="name" required placeholder="Your Name" />
+                <input type="text" id="email " name="email" required placeholder="Your Email"/>
+                <input type="password" id="password" name="password" required placeholder="Password"/>
+                <label for="name"></label>
+                <input type="password" id="repassword" name="repassword" required />
+                <div>
+                <input type="checkbox" id="check" />
+                <label for="check">I agree all statements in <a href="">Terms of service</a></label>
+                </div>
+                    <input type="submit" value="Register" />
+                
+                </form>
+            
+                <form class="hidden" action="" method="post">
+                    <label for="email2">Your Email</label>
+                    <input type="text" id="email2" name="email2" required />
+                    <label for="passwordlog">Password</label>
+                    <input type="password" id="passwordlog" name="passwordlog" required />
+                    <input type="checkbox" id="check2" />
+                    <label for="check2"
+                    >Remember me</a> </label>
+                    <input type="submit" value="Login in" />
+                </form>
+
+            
+        </section>
+        </section>
+        <section class="center">
+            <img src="img/signup-image.jpg" alt="sign up image" />
+        </section>
+    </main>
+</body>
+</html>

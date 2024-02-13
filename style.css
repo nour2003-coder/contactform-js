@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 0.5px solid #222222;
+}
+main {
+  /*   margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 0;
+  margin-bottom: 0; */
+  background-color: white;
+  display: flex;
+  /*   padding: 150px 110px; */
+  border-radius: 15px;
+  box-shadow: #222222 solid 2px;
+}
+.slide {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 20px;
+  position: relative; /* Added */
+  z-index: 1;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.slide:checked {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slider-tab {
+  z-index: 0;
+  width: 100px;
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 20px;
+  position: absolute;
+  transition: left 0.3s ease;
+}
+
+#login:checked ~ .slider-tab {
+  left: 0;
+}
+
+#signup:checked ~ .slider-tab {
+  left: 50%;
+}
+
+.choose-form {
+  margin: 10px;
+  width: 200px;
+  display: flex;
+  position: relative;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /*   padding: 75px; */
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  /*   margin: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  font-size: 25px;
+  text-align: center;
+}
+.title {
+  margin-top: 35px;
+}
+@media screen and (max-width: 750px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
