@@ -6,12 +6,7 @@
 const changelabel=()=>{
     tlogin.classList.toggle("hidden");
     tsignup.classList.toggle("hidden");
-
 }
-
-
-
-
 const loginRadio = document.getElementById("login");
 const signupRadio = document.getElementById("signup");
 const tlogin = document.getElementById("tlogin");
