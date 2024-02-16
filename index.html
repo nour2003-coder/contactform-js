@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <title>Contact form</title>
-    <script src="script.js" defer></script>
+
   </head>
 
   <body>
@@ -14,44 +14,50 @@
         <section class="container">
             
             <section class="title">
-                <div id="title" class="hidden">Login Form</div>
-                <div id="title" class="signup">Signup Form</div>
+                <div id="tlogin" class="hidden title">Login </div>
+                <div id="tsignup" class=" title">Sign up </div>
             </section> 
             <section class="center">
             <section class="choose-form">
-                <input type="radio" name="slide" id="login" />
-                <label for="login" class="slide login">    Login</label>
                 <input type="radio" name="slide" id="signup" />
-                <label for="signup" class="slide signup"  checked>Signup</label>
+                <label for="login" class="slide login"> Signup  </label>
+                <input type="radio" name="slide" id="login" />
+                <label for="signup" class="slide signup" checked> Login</label>
+               
+
+
+               
                 <div class="slider-tab"></div>
             </section>
             </section>
-      
             <section >
        
-                <form action="" method="post">
+                <form action="" id="form1" method="post">
                 <input type="text" id="name " name="name" required placeholder="Your Name" />
-                <input type="text" id="email " name="email" required placeholder="Your Email"/>
-                <input type="password" id="password" name="password" required placeholder="Password"/>
+                <input type="text" class="email" id="email" name="email" required placeholder="Your Email"/>
+                <input type="password"  id="password" name="password" required placeholder="Password"/>
+                <div class="incorrect hidden">password must contain at least eight characters, at least one number <br>and both lower and uppercase letters and special characters</div>
                 <label for="name"></label>
-                <input type="password" id="repassword" name="repassword" required />
-                <div>
-                <input type="checkbox" id="check" />
-                <label for="check">I agree all statements in <a href="">Terms of service</a></label>
+                <input type="password" id="repassword" name="repassword" required placeholder="Repeat your Password" />
+                <div class="relative">
+                    <input type="checkbox" id="check" required /> 
+                <label for="check"> I agree all statements in <a href="">Terms of service</a></label>
                 </div>
-                    <input type="submit" value="Register" />
-                
+                    <input id="signupbutton" type="submit" value="Register" />
                 </form>
             
-                <form class="hidden" action="" method="post">
-                    <label for="email2">Your Email</label>
-                    <input type="text" id="email2" name="email2" required />
-                    <label for="passwordlog">Password</label>
-                    <input type="password" id="passwordlog" name="passwordlog" required />
-                    <input type="checkbox" id="check2" />
-                    <label for="check2"
-                    >Remember me</a> </label>
-                    <input type="submit" value="Login in" />
+                <form id="form2" class="hidden" action="" method="post">
+                   
+                <input type="text" id="email2" name="email" required placeholder="Your Email"/>
+                <input  type="password" id="passwordlog" name="password" required placeholder="Password"/>
+                <div class="incorrect1 hidden">password must contain at least eight characters, at least one number and both lower and uppercase letters and special characters</div>
+                <input type="password" id="repasswordl" name="repassword" required placeholder="Repeat your Password" />
+                <div class="relative">
+                <input type="checkbox" id="check2" required /> 
+                <label for="check2"> Remember me</label>
+                </div>
+                    <input id="loginbutton" type="submit" value="Login in" />  
+                </div>
                 </form>
 
             
@@ -61,5 +67,6 @@
             <img src="img/signup-image.jpg" alt="sign up image" />
         </section>
     </main>
+    <script src="script.js" defer></script>
 </body>
 </html>

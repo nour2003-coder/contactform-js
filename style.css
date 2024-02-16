@@ -12,6 +12,15 @@ body {
   justify-content: center;
   height: 100vh;
 }
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  margin-right: 15px;
+  margin-left: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
 input {
   border-left: none;
   border-right: none;
@@ -19,22 +28,23 @@ input {
   border-bottom: 0.5px solid #222222;
 }
 main {
-  /*   margin-right: 20%;
-  margin-left: 20%;
-  margin-top: 0;
-  margin-bottom: 0; */
+  box-shadow: 5px 3px 30px 25px rgba(221, 214, 214, 0.66);
+  -webkit-box-shadow: 5px 3px 30px 25px rgba(221, 214, 214, 0.66);
+  -moz-box-shadow: 5px 3px 30px 25px rgba(221, 214, 214, 0.66);
+
   background-color: white;
   display: flex;
   /*   padding: 150px 110px; */
   border-radius: 15px;
   box-shadow: #222222 solid 2px;
 }
+
 .slide {
   cursor: pointer;
   display: inline-block;
   margin-right: 20px;
   padding: 10px 20px;
-  position: relative; /* Added */
+  position: relative;
   z-index: 1;
   border-radius: 20px;
   transition: all 0.3s ease;
@@ -45,7 +55,20 @@ main {
   color: #fff;
   border-color: #007bff;
 }
-
+img {
+  margin: 10px;
+}
+input[type="submit"] {
+  color: #f8f8f8;
+  font-size: 16px;
+  width: 130px;
+  height: 50px;
+  border-radius: 5px;
+  margin-left: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #6dabe4;
+}
 input[type="radio"] {
   position: absolute;
   opacity: 0;
@@ -88,29 +111,112 @@ input[type="radio"] {
 .container {
   display: flex;
   flex-direction: column;
-  /*   padding: 75px; */
 }
 form {
   display: flex;
   flex-direction: column;
 }
 img {
-  /*   margin: 5px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#title {
-  font-size: 25px;
-  text-align: center;
-}
 .title {
-  margin-top: 35px;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
 }
+input[type="checkbox"] {
+  margin-left: 15px;
+}
+label {
+  display: inline;
+  position: relative;
+
+  text-wrap: nowrap;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
 @media screen and (max-width: 750px) {
   main {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 3%;
   }
+}
+.relative {
+  position: relative;
+}
+@media screen and (max-width: 300px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 99%;
+    top: 2%;
+  }
+  input[type="checkbox"] {
+    display: inline;
+  }
+  label {
+    position: absolute;
+    left: 32px;
+    font-size: 13px;
+    white-space: wrap;
+  }
+  img {
+    width: 200px;
+  }
+  input[type="submit"] {
+    margin-top: 15px;
+    margin-left: 30%;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+  }
+  .slider-tab {
+    width: 100px;
+  }
+  .choose-form {
+    margin: 10px;
+    width: 150px;
+    margin-left: 10%;
+  }
+}
+#form2 input[type="text"],
+#form2 input[type="password"] {
+  width: 120%;
+  margin-right: 80px;
+}
+
+#form2 {
+  margin-right: 90px;
+}
+#loginbutton {
+  margin-left: 40%;
+}
+#tlogin {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+.error {
+  color: red;
+  border-bottom: 1px solid red;
+  background-color: #ffebeb;
+}
+.valid {
+  color: green;
+  border-bottom: 1px solid green;
+  background-color: #cdeccd;
+}
+.incorrect,
+.incorrect1 {
+  text-wrap: wrap;
+  font-size: 12px;
+  color: red;
+  padding-left: 17px;
 }
