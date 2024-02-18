@@ -33,15 +33,22 @@
             <section >
        
                 <form action="" id="form1" method="post">
-                <input type="text" id="name " name="name" required placeholder="Your Name" />
+                <input type="text" id="name" name="name" required placeholder="Your Name" />
                 <input type="text" class="email" id="email" name="email" required placeholder="Your Email"/>
                 <input type="password"  id="password" name="password" required placeholder="Password"/>
-                <div class="incorrect hidden">password must contain at least eight characters, at least one number <br>and both lower and uppercase letters and special characters</div>
+                <div class="incorrect hidden">
+                    <ul>
+                        <li>Your password must be have at least: 8 characters long</li>
+                        <li>1 uppercase & 1 lowercase character, 1 number and special character.</li>
+
+                    </ul>
+                </div>
                 <label for="name"></label>
                 <input type="password" id="repassword" name="repassword" required placeholder="Repeat your Password" />
                 <div class="relative">
                     <input type="checkbox" id="check" required /> 
                 <label for="check"> I agree all statements in <a href="">Terms of service</a></label>
+                <label for="check" id="checkError" class="errorch noerror">Please agree to the Terms of Service</dlabel>
                 </div>
                     <input id="signupbutton" type="submit" value="Register" />
                 </form>
@@ -50,7 +57,13 @@
                    
                 <input type="text" id="email2" name="email" required placeholder="Your Email"/>
                 <input  type="password" id="passwordlog" name="password" required placeholder="Password"/>
-                <div class="incorrect1 hidden">password must contain at least eight characters, at least one number and both lower and uppercase letters and special characters</div>
+                <div class="incorrect1 hidden" >
+                    <ul>
+                        <li>Your password must be have at least: 8 characters long</li>
+                        <li>1 uppercase & 1 lowercase character, 1 number and special character.</li>
+
+                    </ul>
+                </div>
                 <input type="password" id="repasswordl" name="repassword" required placeholder="Repeat your Password" />
                 <div class="relative">
                 <input type="checkbox" id="check2" required /> 

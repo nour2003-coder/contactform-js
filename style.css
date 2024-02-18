@@ -28,13 +28,13 @@ input {
   border-bottom: 0.5px solid #222222;
 }
 main {
+  max-width: 700px;
+
   box-shadow: 5px 3px 30px 25px rgba(221, 214, 214, 0.66);
   -webkit-box-shadow: 5px 3px 30px 25px rgba(221, 214, 214, 0.66);
   -moz-box-shadow: 5px 3px 30px 25px rgba(221, 214, 214, 0.66);
-
   background-color: white;
   display: flex;
-  /*   padding: 150px 110px; */
   border-radius: 15px;
   box-shadow: #222222 solid 2px;
 }
@@ -189,12 +189,12 @@ label {
 }
 #form2 input[type="text"],
 #form2 input[type="password"] {
-  width: 120%;
+  width: 90%;
   margin-right: 80px;
 }
 
 #form2 {
-  margin-right: 90px;
+  margin-right: 5px;
 }
 #loginbutton {
   margin-left: 40%;
@@ -208,13 +208,27 @@ label {
   border-bottom: 1px solid red;
   background-color: #ffebeb;
 }
+.errorch {
+  color: red;
+  display: block;
+  margin-left: 15px;
+}
 .valid {
-  color: green;
+  /*   color: green; */
   border-bottom: 1px solid green;
   background-color: #cdeccd;
 }
+.noerror {
+  display: none;
+}
+.incorrect ul,
+.incorrect1 ul {
+  list-style: none;
+}
 .incorrect,
 .incorrect1 {
+  margin-top: -10px;
+  width: 100%;
   text-wrap: wrap;
   font-size: 12px;
   color: red;
