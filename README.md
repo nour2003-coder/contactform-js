@@ -1,6 +1,6 @@
 # ✨ Contactify ✨
 
-![Contactify](Capture.png)
+![Contactify](Capture.PNG)
 
 ## 🚀 Description
 
